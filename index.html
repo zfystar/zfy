@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>zfy.</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+    <link href="./dist/favicon.ico" rel="apple-touch-icon">
+    <link href="./dist/style.css" rel="stylesheet">
+<link rel="stylesheet" href="./dist/layer.css" id="layui_layer_skinlayercss" style=""></head>
+
+<body style="background:#e2e2e2;">
+    <nav id="site-nav">
+    <div class="float-left" id="nav-close"></div>
+    <iframe src="./dist/saved_resource.html" title="ChatGPT API" width="100%" height="100%" allow="clipboard-read;clipboard-write" id="chatgpt"></iframe>
+</nav>    <div id="site-main">
+        <div id="main-overlay"></div>
+        <header id="site-header">
+    <div class="container">
+        <div class="float-left" id="header-logo">
+            <a href="/">
+                <img src="./dist/logo.png" alt="" width="25">
+            </a>
+        </div>
+        <div class="float-right" id="burger">
+            <div id="burger-icon">
+                <img src="./dist/chat.png" alt="" width="25">
+            </div>
+        </div>
+    </div>
+</header>        <div class="headline search-bar">
+            <div class="container">
+                <div class="headline-content">
+                    <div class="search-tab">
+                        <span class="my active">我的</span>
+                        <span class="baidu">百度</span>
+                        <span class="google">谷歌</span>
+                        <span class="bing">必应</span>
+                        <span class="zhihu">知乎</span>
+                        <span class="segmentfault">思否</span>
+                    </div>
+                    <form class="search-form" target="_blank" action="https://zfy-search.vercel.app/search">
+                        <input class="float-left search-keyword" type="search" autocomplete="off" autofocus="" name="q" placeholder="简单搜索">
+                        <input class="float-right" type="submit" value="搜索">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="work-link" style="opacity: 1;">
+                <div class="container">
+                    <!-- tab -->
+                    <div class="tab">
+                        <span class="active">常用</span>
+                                                    <span>社区</span>
+                                                    <span>文档</span>
+                                                    <span>工具</span>
+                                                    <span>学习</span>
+                                                    <span>其他</span>
+                    </div>
+                    <!-- tab -->
+                    <!-- 常用 -->
+                    <div class="info" id="common">
+                        <ul>
+                                                            <li>
+                                    <a href="https://www.v2ex.com/" target="_blank" data-id="7">
+                                        <img src="./dist/7.png">
+                                        <span>V2ex</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="http://www.dgtle.com/" target="_blank" data-id="31">
+                                        <img src="./dist/31.png">
+                                        <span>数字尾巴</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://linux.do/" target="_blank" data-id="351">
+                                        <img src="./dist/351.png">
+                                        <span>LINUX DO</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://learnku.com/laravel" target="_blank" data-id="4">
+                                        <img src="./dist/4.png">
+                                        <span>Learnku</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://segmentfault.com/" target="_blank" data-id="3">
+                                        <img src="./dist/3.png">
+                                        <span>Segmentfau </span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://bbs.pcbeta.com/" target="_blank" data-id="270">
+                                        <img src="./dist/270.png">
+                                        <span>远景论坛</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://zentao.liangzhicn.com/zentao/my/" target="_blank" data-id="179">
+                                        <img src="./dist/179.png">
+                                        <span>禅道</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://github.com/" target="_blank" data-id="34">
+                                        <img src="./dist/34.png">
+                                        <span>Github</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.macat.vip/" target="_blank" data-id="262">
+                                        <img src="./dist/262.png">
+                                        <span>马克喵</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.youtube.com/" target="_blank" data-id="50">
+                                        <img src="./dist/50.png">
+                                        <span>Youtube</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://gitlab.kanhan.com/users/sign_in" target="_blank" data-id="207">
+                                        <img src="./dist/207.png">
+                                        <span>看汉仓库</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://learnku.com/docs/laravel/10.x" target="_blank" data-id="172">
+                                        <img src="./dist/172.png">
+                                        <span>Laravel 中文</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.nodeseek.com/" target="_blank" data-id="371">
+                                        <img src="./dist/371.png">
+                                        <span>NodeSeek</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://gitlab.liangzhicn.com/users/sign_in" target="_blank" data-id="181">
+                                        <img src="./dist/181.png">
+                                        <span>量之仓库</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day" target="_blank" data-id="272">
+                                        <img src="./dist/272.png">
+                                        <span>知乎日榜</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://learnku.com/docs/laravel-cheatsheet/10.x" target="_blank" data-id="206">
+                                        <img src="./dist/206.png">
+                                        <span>Laravel速查表</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.bilibili.com/" target="_blank" data-id="41">
+                                        <img src="./dist/41.png">
+                                        <span>哔哩哔哩</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://zfy-swagger.vercel.app/" target="_blank" data-id="263">
+                                        <img src="./dist/263.png">
+                                        <span>Swagger Editor</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://translate.google.com/" target="_blank" data-id="66">
+                                        <img src="./dist/66.png">
+                                        <span>Google 翻译</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://gitee.com/" target="_blank" data-id="35">
+                                        <img src="./dist/35.png">
+                                        <span>Gitee</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://juejin.im/" target="_blank" data-id="8">
+                                        <img src="./dist/8.png">
+                                        <span>掘金  </span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.aliyundrive.com/drive/" target="_blank" data-id="282">
+                                        <img src="./dist/282.png">
+                                        <span>阿里云盘</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://zfy-chat.vercel.app/chat" target="_blank" data-id="334">
+                                        <img src="./dist/334.png">
+                                        <span>LobeChat</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://rebang.today/" target="_blank" data-id="285">
+                                        <img src="./dist/285.png">
+                                        <span>今日热榜</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://zfy-team.coding.net/user" target="_blank" data-id="36">
+                                        <img src="./dist/36.png">
+                                        <span>Coding</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://chat-mini.vercel.app" target="_blank" data-id="374">
+                                        <img src="./dist/374.svg">
+                                        <span>Chat Mini</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://dash.xfltd.me/dashboard" target="_blank" data-id="299">
+                                        <img src="./dist/299.png">
+                                        <span>XFLTD机场</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://tieba.baidu.com/index.html" target="_blank" data-id="113">
+                                        <img src="./dist/113.png">
+                                        <span>百度贴吧</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://bbs.nga.cn/" target="_blank" data-id="347">
+                                        <img src="./dist/347.png">
+                                        <span>NGA社区</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://tool.browser.qq.com/" target="_blank" data-id="339">
+                                        <img src="./dist/339.png">
+                                        <span>帮小忙工具</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://js.design/workspace" target="_blank" data-id="349">
+                                        <img src="./dist/349.png">
+                                        <span>即时设计</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.kancloud.cn/manual/thinkphp6_0/1037479" target="_blank" data-id="110">
+                                        <img src="./dist/110.png">
+                                        <span>ThinkPHP6手册</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://copilot.microsoft.com/" target="_blank" data-id="358">
+                                        <img src="./dist/358.png">
+                                        <span>Copilot</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://sspai.com/" target="_blank" data-id="57">
+                                        <img src="./dist/57.png">
+                                        <span>少数派</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.hanjukankan.com/" target="_blank" data-id="210">
+                                        <img src="./dist/210.png">
+                                        <span>影视看看</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" data-id="20">
+                                        <img src="./dist/20.png">
+                                        <span>微信小程序 </span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://uniapp.dcloud.io/" target="_blank" data-id="106">
+                                        <img src="./dist/106.png">
+                                        <span>uni-app</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://mail.qq.com/" target="_blank" data-id="52">
+                                        <img src="./dist/52.png">
+                                        <span>QQ邮箱</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://chatgpt.com/" target="_blank" data-id="341">
+                                        <img src="./dist/300.png">
+                                        <span>ChatGPT</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://api.v3.cm/" target="_blank" data-id="300">
+                                        <img src="./dist/320.png">
+                                        <span>V3 API</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://docs.qq.com/desktop" target="_blank" data-id="56">
+                                        <img src="./dist/56.png">
+                                        <span>腾讯文档</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://mojie.me/" target="_blank" data-id="309">
+                                        <img src="./dist/309.png">
+                                        <span>魔戒</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.iamwawa.cn/" target="_blank" data-id="100">
+                                        <img src="./dist/100.png">
+                                        <span>蛙蛙在线工具</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://weibo.com/" target="_blank" data-id="64">
+                                        <img src="./dist/64.png">
+                                        <span>微博</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://learnku.com/go" target="_blank" data-id="224">
+                                        <img src="./dist/224.png">
+                                        <span>Go技术论坛</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="http://iconfont.cn/home/index" target="_blank" data-id="26">
+                                        <img src="./dist/26.png">
+                                        <span>阿里图标</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://lanhuapp.com/" target="_blank" data-id="92">
+                                        <img src="./dist/92.png">
+                                        <span>蓝湖</span>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://fanyi.youdao.com/" target="_blank" data-id="67">
+                                        <img src="./dist/67.png">
+                                        <span>在线翻译</span>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <!-- 常用 -->
+                    <!-- 列表 -->
+                                            <div class="info">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://segmentfault.com/" target="_blank" data-id="3">
+                                            <img src="./dist/3.png">
+                                            <span>Segmentfau </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/laravel" target="_blank" data-id="4">
+                                            <img src="./dist/4.png">
+                                            <span>Learnku</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://laravelacademy.org/" target="_blank" data-id="6">
+                                            <img src="./dist/6.png">
+                                            <span>Laravel学院</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.v2ex.com/" target="_blank" data-id="7">
+                                            <img src="./dist/7.png">
+                                            <span>V2ex</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://juejin.im/" target="_blank" data-id="8">
+                                            <img src="./dist/8.png">
+                                            <span>掘金  </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://blog.csdn.net/" target="_blank" data-id="10">
+                                            <img src="./dist/10.png">
+                                            <span> CSDN</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.dgtle.com/" target="_blank" data-id="31">
+                                            <img src="./dist/31.png">
+                                            <span>数字尾巴</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.jianshu.com/" target="_blank" data-id="53">
+                                            <img src="./dist/53.png">
+                                            <span>简书</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.oschina.net/" target="_blank" data-id="55">
+                                            <img src="./dist/55.png">
+                                            <span>开源中国</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://weibo.com/" target="_blank" data-id="64">
+                                            <img src="./dist/64.png">
+                                            <span>微博</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.zhihu.com/" target="_blank" data-id="65">
+                                            <img src="./dist/65.png">
+                                            <span>知乎</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.geekpark.net/" target="_blank" data-id="85">
+                                            <img src="./dist/85.png">
+                                            <span>极客公园</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.ithome.com/" target="_blank" data-id="94">
+                                            <img src="./dist/94.png">
+                                            <span>IT之家</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://tieba.baidu.com/index.html" target="_blank" data-id="113">
+                                            <img src="./dist/113.png">
+                                            <span>百度贴吧</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://m.weibo.cn/" target="_blank" data-id="114">
+                                            <img src="./dist/114.png">
+                                            <span>新浪微博</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.huxiu.com/" target="_blank" data-id="129">
+                                            <img src="./dist/129.png">
+                                            <span>虎嗅</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.ifanr.com/" target="_blank" data-id="148">
+                                            <img src="./dist/148.png">
+                                            <span>爱范儿</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://studygolang.com/" target="_blank" data-id="159">
+                                            <img src="./dist/159.png">
+                                            <span>GO中文网</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.golangroadmap.com/" target="_blank" data-id="160">
+                                            <img src="./dist/160.png">
+                                            <span>GO路线</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://blog.51cto.com/" target="_blank" data-id="196">
+                                            <img src="./dist/196.png">
+                                            <span>51CTO</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/go" target="_blank" data-id="224">
+                                            <img src="./dist/224.png">
+                                            <span>Go技术论坛</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://appstorrent.ru/" target="_blank" data-id="241">
+                                            <img src="./dist/241.png">
+                                            <span>AppStorrent</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://bbs.mediy.cn/" target="_blank" data-id="266">
+                                            <img src="./dist/266.png">
+                                            <span>我们的DIY</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://bbs.pcbeta.com/" target="_blank" data-id="270">
+                                            <img src="./dist/270.png">
+                                            <span>远景论坛</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day" target="_blank" data-id="272">
+                                            <img src="./dist/272.png">
+                                            <span>知乎日榜</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://rebang.today/" target="_blank" data-id="285">
+                                            <img src="./dist/285.png">
+                                            <span>今日热榜</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://yuexiang.fun/" target="_blank" data-id="287">
+                                            <img src="./dist/287.png">
+                                            <span>悦享社区</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://cn.tgstat.com/" target="_blank" data-id="310">
+                                            <img src="./dist/310.png">
+                                            <span>Tgstat</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.appinn.com/" target="_blank" data-id="327">
+                                            <img src="./dist/327.png">
+                                            <span>小众软件</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://bbs.nga.cn/" target="_blank" data-id="347">
+                                            <img src="./dist/347.png">
+                                            <span>NGA社区</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://linux.do/" target="_blank" data-id="351">
+                                            <img src="./dist/351.png">
+                                            <span>LINUX DO</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.chiphell.com/" target="_blank" data-id="361">
+                                            <img src="./dist/361.png">
+                                            <span>Chiphell</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.pinterest.com/" target="_blank" data-id="369">
+                                            <img src="./dist/369.png">
+                                            <span>Pinterest</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.nodeseek.com/" target="_blank" data-id="371">
+                                            <img src="./dist/371.png">
+                                            <span>NodeSeek</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://clochat.com/" target="_blank" data-id="377">
+                                            <img src="./dist/favicon.ico">
+                                            <span>CloChat</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                            <div class="info">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1445241432" target="_blank" data-id="14">
+                                            <img src="./dist/14.png">
+                                            <span> 微信开发文档</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://element-cn.eleme.io/#/zh-CN/component/installation" target="_blank" data-id="15">
+                                            <img src="./dist/15.png">
+                                            <span>ElementUi</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.iviewui.com/docs/guide/install" target="_blank" data-id="17">
+                                            <img src="./dist/17.png">
+                                            <span>iviewui</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://doc2.workerman.net/" target="_blank" data-id="19">
+                                            <img src="./dist/19.png">
+                                            <span>GateWay</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" data-id="20">
+                                            <img src="./dist/20.png">
+                                            <span>微信小程序 </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://hemin.cn/jq/" target="_blank" data-id="25">
+                                            <img src="./dist/favicon.ico">
+                                            <span>JQ手册</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://cn.vuejs.org/" target="_blank" data-id="89">
+                                            <img src="./dist/89.png">
+                                            <span>Vue文档</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://uniapp.dcloud.io/" target="_blank" data-id="106">
+                                            <img src="./dist/106.png">
+                                            <span>uni-app</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/manual/thinkphp6_0/1037479" target="_blank" data-id="110">
+                                            <img src="./dist/110.png">
+                                            <span>ThinkPHP6手册</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://linux.hellocode.name/tool.html" target="_blank" data-id="111">
+                                            <img src="./dist/favicon.ico">
+                                            <span>必知必会Linux命令</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://man.linuxde.net/" target="_blank" data-id="117">
+                                            <img src="./dist/favicon.ico">
+                                            <span>Linux命令大全</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/chudong/bt2017/424204" target="_blank" data-id="123">
+                                            <img src="./dist/123.png">
+                                            <span>宝塔文档 </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/hubqin/thinkphp/1361597" target="_blank" data-id="130">
+                                            <img src="./dist/130.png">
+                                            <span>TP6核心分析</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://doc3.workerman.net/640361" target="_blank" data-id="138">
+                                            <img src="./dist/138.png">
+                                            <span>workerman手册</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://hyperf.wiki/2.0/#/" target="_blank" data-id="167">
+                                            <img src="./dist/167.png">
+                                            <span>Hyperf</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://jasperxu.github.io/gorm-zh/crud.html#q" target="_blank" data-id="168">
+                                            <img src="./dist/168.png">
+                                            <span>GORM</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.bookstack.cn/read/topgoer/56efad274084e7ec.md" target="_blank" data-id="171">
+                                            <img src="./dist/171.png">
+                                            <span>GO中文</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/docs/laravel/10.x" target="_blank" data-id="172">
+                                            <img src="./dist/172.png">
+                                            <span>Laravel 中文</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/docs/gin-gonic/2019" target="_blank" data-id="174">
+                                            <img src="./dist/174.png">
+                                            <span>Gin框架</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/docs/gorm/v2" target="_blank" data-id="175">
+                                            <img src="./dist/175.png">
+                                            <span>GORM中文</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://vvbin.cn/doc-next/" target="_blank" data-id="195">
+                                            <img src="./dist/favicon.ico">
+                                            <span>Vben Admin</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.bookstack.cn/read/ELKstack-guide-cn/README.md" target="_blank" data-id="201">
+                                            <img src="./dist/201.png">
+                                            <span>ELKStack中文</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://learnku.com/docs/laravel-cheatsheet/10.x" target="_blank" data-id="206">
+                                            <img src="./dist/206.png">
+                                            <span>Laravel速查表</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                            <div class="info">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://smallpdf.com/cn" target="_blank" data-id="24">
+                                            <img src="./dist/24.png">
+                                            <span>PDF转化</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://iconfont.cn/home/index" target="_blank" data-id="26">
+                                            <img src="./dist/26.png">
+                                            <span>阿里图标</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://tool.lu/" target="_blank" data-id="28">
+                                            <img src="./dist/28.png">
+                                            <span>在线工具箱</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://tinypng.com/" target="_blank" data-id="32">
+                                            <img src="./dist/32.png">
+                                            <span>图片压缩</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://cli.im/" target="_blank" data-id="33">
+                                            <img src="./dist/33.png">
+                                            <span>二维码生成</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://github.com/" target="_blank" data-id="34">
+                                            <img src="./dist/34.png">
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://gitee.com/" target="_blank" data-id="35">
+                                            <img src="./dist/35.png">
+                                            <span>Gitee</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://zfy-team.coding.net/user" target="_blank" data-id="36">
+                                            <img src="./dist/36.png">
+                                            <span>Coding</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mail.qq.com/" target="_blank" data-id="52">
+                                            <img src="./dist/52.png">
+                                            <span>QQ邮箱</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://docs.qq.com/desktop" target="_blank" data-id="56">
+                                            <img src="./dist/56.png">
+                                            <span>腾讯文档</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.ipip.net/ip.html" target="_blank" data-id="61">
+                                            <img src="./dist/61.png">
+                                            <span>IP查询</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://translate.google.com/" target="_blank" data-id="66">
+                                            <img src="./dist/66.png">
+                                            <span>Google 翻译</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://fanyi.youdao.com/" target="_blank" data-id="67">
+                                            <img src="./dist/67.png">
+                                            <span>在线翻译</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://lanhuapp.com/" target="_blank" data-id="92">
+                                            <img src="./dist/92.png">
+                                            <span>蓝湖</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.iamwawa.cn/" target="_blank" data-id="100">
+                                            <img src="./dist/100.png">
+                                            <span>蛙蛙在线工具</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://apizza.net/" target="_blank" data-id="107">
+                                            <img src="./dist/107.png">
+                                            <span>Apizza</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.bootcdn.cn/" target="_blank" data-id="108">
+                                            <img src="./dist/108.png">
+                                            <span>BootCDN</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://laragon.org/" target="_blank" data-id="112">
+                                            <img src="./dist/112.png">
+                                            <span>Laragon</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.bookstack.cn/" target="_blank" data-id="152">
+                                            <img src="./dist/152.png">
+                                            <span>文档大全</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://zentao.liangzhicn.com/zentao/my/" target="_blank" data-id="179">
+                                            <img src="./dist/179.png">
+                                            <span>禅道</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://exmail.qq.com/" target="_blank" data-id="180">
+                                            <img src="./dist/180.png">
+                                            <span>腾讯企业邮箱</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://gitlab.liangzhicn.com/users/sign_in" target="_blank" data-id="181">
+                                            <img src="./dist/181.png">
+                                            <span>量之仓库</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://gitlab.kanhan.com/users/sign_in" target="_blank" data-id="207">
+                                            <img src="./dist/207.png">
+                                            <span>看汉仓库</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://dir.yardtea.cc/" target="_blank" data-id="211">
+                                            <img src="./dist/211.png">
+                                            <span>生成目录结构</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://devtool.tech/tree" target="_blank" data-id="219">
+                                            <img src="./dist/219.png">
+                                            <span>Tree目录生成器</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://zfy-swagger.vercel.app/" target="_blank" data-id="263">
+                                            <img src="./dist/263.png">
+                                            <span>Swagger Editor</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://orbstack.dev/" target="_blank" data-id="275">
+                                            <img src="./dist/275.png">
+                                            <span>OrbStack</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.aliyundrive.com/drive/" target="_blank" data-id="282">
+                                            <img src="./dist/282.png">
+                                            <span>阿里云盘</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://api.v3.cm/" target="_blank" data-id="300">
+                                            <img src="./dist/320.png">
+                                            <span>V3 API</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://portal.azure.com/#home" target="_blank" data-id="313">
+                                            <img src="./dist/313.png">
+                                            <span>Azure</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://api.b3n.fun/" target="_blank" data-id="321">
+                                            <img src="./dist/321.png">
+                                            <span>B3n AI</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://emailz.cc/" target="_blank" data-id="328">
+                                            <img src="./dist/328.png">
+                                            <span>临时邮箱</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://zfy-chat.vercel.app/chat" target="_blank" data-id="334">
+                                            <img src="./dist/334.png">
+                                            <span>LobeChat</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://tool.browser.qq.com/" target="_blank" data-id="339">
+                                            <img src="./dist/339.png">
+                                            <span>帮小忙工具</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://chatgpt.com/" target="_blank" data-id="341">
+                                            <img src="./dist/300.png">
+                                            <span>ChatGPT</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://sms-activate.org/cn" target="_blank" data-id="343">
+                                            <img src="./dist/343.png">
+                                            <span>SMS-接码</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.telsearch.me/" target="_blank" data-id="348">
+                                            <img src="./dist/348.png">
+                                            <span>电报搜索</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://js.design/workspace" target="_blank" data-id="349">
+                                            <img src="./dist/349.png">
+                                            <span>即时设计</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://kelaode.ai/" target="_blank" data-id="350">
+                                            <img src="./dist/favicon.ico">
+                                            <span>RawChat公益</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://aiso.uk/" target="_blank" data-id="352">
+                                            <img src="./dist/352.png">
+                                            <span>AISO-网盘搜索</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://copilot.microsoft.com/" target="_blank" data-id="358">
+                                            <img src="./dist/358.png">
+                                            <span>Copilot</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://5sim.net/zh" target="_blank" data-id="359">
+                                            <img src="./dist/359.png">
+                                            <span>5sim</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.doubao.com/chat/" target="_blank" data-id="362">
+                                            <img src="./dist/362.png">
+                                            <span>豆包</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://chat.deepseek.com/" target="_blank" data-id="363">
+                                            <img src="./dist/363.png">
+                                            <span>DeepSeek</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://kimi.moonshot.cn/" target="_blank" data-id="364">
+                                            <img src="./dist/364.png">
+                                            <span>Kimi.ai</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://aifree4.fly.dev/" target="_blank" data-id="372">
+                                            <img src="./dist/372.png">
+                                            <span>公益</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://chat-mini.vercel.app" target="_blank" data-id="374">
+                                            <img src="./dist/374.svg">
+                                            <span>Chat Mini</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                            <div class="info">
+                            <ul>
+                                                                    <li>
+                                        <a href="http://www.phpxs.com/code/php/" target="_blank" data-id="21">
+                                            <img src="./dist/21.png">
+                                            <span>PHP代码片段</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/explore" target="_blank" data-id="38">
+                                            <img src="./dist/38.png">
+                                            <span>看云</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.runoob.com/" target="_blank" data-id="39">
+                                            <img src="./dist/39.png">
+                                            <span>菜鸟教程</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.topgoer.com/" target="_blank" data-id="118">
+                                            <img src="./dist/118.png">
+                                            <span>GO大全</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.php20.cn/noobCourse/" target="_blank" data-id="135">
+                                            <img src="./dist/135.png">
+                                            <span>PHP知识</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.shxdledu.cn/" target="_blank" data-id="136">
+                                            <img src="./dist/favicon.ico">
+                                            <span>Linux </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://xueyuanjun.com/" target="_blank" data-id="154">
+                                            <img src="./dist/154.png">
+                                            <span>学院君</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/golang_programe/golang/1084121" target="_blank" data-id="164">
+                                            <img src="./dist/164.png">
+                                            <span>GO相关</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://wizardforcel.gitbooks.io/go42/content/content/42_8_project.html#82-%E4%BD%BF%E7%94%A8-godoc" target="_blank" data-id="165">
+                                            <img src="./dist/165.png">
+                                            <span>GO语言42经</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://bingohuang.gitbooks.io/docker_practice/content/image/build.html" target="_blank" data-id="166">
+                                            <img src="./dist/166.png">
+                                            <span>Docker从入门</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.liwenzhou.com/" target="_blank" data-id="169">
+                                            <img src="./dist/169.png">
+                                            <span>GO学习博客</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://eddycjy.gitbook.io/golang/" target="_blank" data-id="170">
+                                            <img src="./dist/favicon.ico">
+                                            <span>跟煎鱼学 Go</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.kancloud.cn/lhj0702/sockstack_gin/1805355" target="_blank" data-id="177">
+                                            <img src="./dist/177.png">
+                                            <span>gin实践</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.topgoer.com/" target="_blank" data-id="178">
+                                            <img src="./dist/178.png">
+                                            <span>Go语言大全</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.golangroadmap.com/" target="_blank" data-id="187">
+                                            <img src="./dist/187.png">
+                                            <span>GolangRoadmap</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://tigerb.cn/php2go" target="_blank" data-id="200">
+                                            <img src="./dist/favicon.ico">
+                                            <span>php2go</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://vue.easydo.work/" target="_blank" data-id="277">
+                                            <img src="./dist/277.png">
+                                            <span>VUE后台管理系统模板</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://xiaolincoding.com/" target="_blank" data-id="286">
+                                            <img src="./dist/286.png">
+                                            <span>小林coding</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://golang.design/go-questions/" target="_blank" data-id="311">
+                                            <img src="./dist/311.png">
+                                            <span>Go程序员宝典</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://todayqq.gitbooks.io/phper/content/" target="_blank" data-id="312">
+                                            <img src="./dist/favicon.ico">
+                                            <span>PHPer面试指南</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.lsdcloud.com/" target="_blank" data-id="330">
+                                            <img src="./dist/330.png">
+                                            <span>Golang技术分享</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://repcz.github.io/proxytool/" target="_blank" data-id="353">
+                                            <img src="./dist/353.png">
+                                            <span>代理工具</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://freeollama.oneplus1.top/" target="_blank" data-id="375">
+                                            <img src="./dist/favicon.ico">
+                                            <span>Free Ollama</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://dbzdk.com/" target="_blank" data-id="376">
+                                            <img src="./dist/376.png">
+                                            <span>电报值得看</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                            <div class="info">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.bilibili.com/" target="_blank" data-id="41">
+                                            <img src="./dist/41.png">
+                                            <span>哔哩哔哩</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.youtube.com/" target="_blank" data-id="50">
+                                            <img src="./dist/50.png">
+                                            <span>Youtube</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://sspai.com/" target="_blank" data-id="57">
+                                            <img src="./dist/57.png">
+                                            <span>少数派</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://github.com/colinlet/PHP-Interview-QA" target="_blank" data-id="79">
+                                            <img src="./dist/79.png">
+                                            <span>PHP面试问答</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.yikm.net/" target="_blank" data-id="124">
+                                            <img src="./dist/124.png">
+                                            <span>小霸王</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://jsglpt.gdedu.gov.cn/login.jsp" target="_blank" data-id="194">
+                                            <img src="./dist/194.png">
+                                            <span>教师继续教育平台</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.hanjukankan.com/" target="_blank" data-id="210">
+                                            <img src="./dist/210.png">
+                                            <span>影视看看</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.10wallpaper.com/cn/" target="_blank" data-id="229">
+                                            <img src="./dist/229.png">
+                                            <span>10wallpaper</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://bz.zzzmh.cn/index" target="_blank" data-id="230">
+                                            <img src="./dist/230.png">
+                                            <span>极简壁纸</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://wallhere.com/" target="_blank" data-id="240">
+                                            <img src="./dist/240.png">
+                                            <span>壁纸网站</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.dytt89.com/" target="_blank" data-id="245">
+                                            <img src="./dist/245.png">
+                                            <span>电影天堂</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://wallhaven.cc/" target="_blank" data-id="254">
+                                            <img src="./dist/254.png">
+                                            <span>wallhaven</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://next.itellyou.cn/" target="_blank" data-id="255">
+                                            <img src="./dist/255.png">
+                                            <span>NEXT, ITELLYOU</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.minorpatch.com/" target="_blank" data-id="256">
+                                            <img src="./dist/256.png">
+                                            <span>Mac Apps</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.cilimao.vip/" target="_blank" data-id="259">
+                                            <img src="./dist/259.png">
+                                            <span>磁力猫</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mackie100projects.altervista.org/download-opencore-configurator/" target="_blank" data-id="260">
+                                            <img src="./dist/260.png">
+                                            <span>Download OpenCore</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.macat.vip/" target="_blank" data-id="262">
+                                            <img src="./dist/262.png">
+                                            <span>马克喵</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.gwbn.net.cn/" target="_blank" data-id="280">
+                                            <img src="./dist/280.png">
+                                            <span>长城宽带</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://dash.xfltd.me/dashboard" target="_blank" data-id="299">
+                                            <img src="./dist/299.png">
+                                            <span>XFLTD机场</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mojie.me/" target="_blank" data-id="309">
+                                            <img src="./dist/309.png">
+                                            <span>魔戒</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.xiong.live/" target="_blank" data-id="325">
+                                            <img src="./dist/325.png">
+                                            <span>小熊批发零售</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://btbtt15.com/" target="_blank" data-id="331">
+                                            <img src="./dist/331.png">
+                                            <span>网盘电影</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://whatshub.top/" target="_blank" data-id="335">
+                                            <img src="./dist/335.png">
+                                            <span>科学策略</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://fn1.170809.xyz/" target="_blank" data-id="340">
+                                            <img src="./dist/favicon.ico">
+                                            <span>飞鸟云</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://macwk.com.cn/" target="_blank" data-id="344">
+                                            <img src="./dist/344.png">
+                                            <span>MacWk</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://macked.app/" target="_blank" data-id="346">
+                                            <img src="./dist/346.png">
+                                            <span>MacKed</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://xmac.app/" target="_blank" data-id="354">
+                                            <img src="./dist/354.png">
+                                            <span>XMac.App</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://999000.best/" target="_blank" data-id="355">
+                                            <img src="./dist/355.png">
+                                            <span>冲上云霄</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.xn--iory11l.net/#/dashboard" target="_blank" data-id="356">
+                                            <img src="./dist/356.png">
+                                            <span>友连</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://wangsumao.cc/#/stage/dashboard" target="_blank" data-id="360">
+                                            <img src="./dist/360.png">
+                                            <span>网速猫</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.ym321.net/#/dashboard" target="_blank" data-id="365">
+                                            <img src="./dist/favicon.ico">
+                                            <span>云盟</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://libvio.me/" target="_blank" data-id="366">
+                                            <img src="./dist/366.png">
+                                            <span>LIBVIO</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://ddys.pro/" target="_blank" data-id="368">
+                                            <img src="./dist/368.png">
+                                            <span>低端影视</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://web2.52pokemon.cc/dashboard" target="_blank" data-id="370">
+                                            <img src="./dist/370.png">
+                                            <span>宝可梦星云</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                        <!-- 列表 -->
+                 
+                </div>
+            </div>
+            <div class="gallery" data-cols="3" data-height="0.8" data-margin="0" style="padding: 0px; position: relative; height: 300px;">
+                <div class="entry work-entry w2" style="width: 752px; height: 300px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; position: absolute; left: 0px; top: 0px;">
+                    <a href="#">
+                        <div class="reveal reveal-in">
+                            <div class="entry-image imageBG" data-img="./dist/thumb-1.jpg" style="background-image: url(&quot;./dist/thumb-1.jpg&quot;); background-size: cover; background-position: center center;"></div>
+                            <div class="info">
+                                <div class="content">
+                                    <div class="title">zfy</div>
+                                    <div class="cat">一万个人眼里有一万个世界</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="entry work-entry" style="width: 376px; height: 300px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; position: absolute; left: 752px; top: 0px;">
+                    <a href="#" target="_blank">
+                        <div class="reveal reveal-in">
+                            <div class="entry-image imageBG" data-img="./dist/thumb-2.jpg" style="background-image: url(&quot;./dist/thumb-2.jpg&quot;); background-size: cover; background-position: center center;"></div>
+                            <div class="info">
+                                <div class="content">
+                                    <div class="title">zfy.</div>
+                                    <div class="cat">作者的个人博客</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer id="site-footer">
+            <div class="container">
+                <div class="copy">
+                    Copyright © <span id="current-year">2025</span> Inc.
+                </div>
+                <!-- <div class="social">
+                    <a href="https://weibo.com/2886221170/profile?topnav=1&wvr=6" target="_blank" class="social-link">
+                        <i class="icon-weibo"></i>
+                    </a>
+                    <a href="https://github.com/zfy941" target="_blank" class="social-link">
+                        <i class="icon-github-circled"></i>
+                    </a>
+                    <a href="/" target="_blank" class="social-link">
+                        <i class="icon-home"></i>
+                    </a>
+                </div> -->
+            </div>
+</footer>    </div>
+    <script src="./dist/main.js"></script>
+    <script src="./dist/layer.js"></script>
+    <script src="./dist/jquery.min.js"></script>
+    <script src="./dist/index.js"></script>
+
+
+</body></html>
